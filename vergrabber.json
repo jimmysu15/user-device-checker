@@ -1,0 +1,396 @@
+{
+    "signature": {
+        "app": "vergrabber",
+        "author": "Tomasz Krol",
+        "notice": "If there is something broken or could be improved - please email me at vergrabber@kingu.pl",
+        "updated": "2017-05-29",
+        "version": "2.2.0"
+    },
+    "server": {
+        "Apache2": {
+            "2.4": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2016-12-20",
+                "latest": true,
+                "version": "2.4.25",
+                "product": "Apache2",
+                "edition": "2.4"
+            },
+            "2.2": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-01-13",
+                "latest": false,
+                "version": "2.2.32",
+                "product": "Apache2",
+                "edition": "2.2"
+            }
+        },
+        "MySQL": {
+            "5.6": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-10",
+                "latest": false,
+                "version": "5.6.36",
+                "product": "MySQL",
+                "edition": "5.6"
+            },
+            "5.5": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-02",
+                "latest": false,
+                "version": "5.5.56",
+                "product": "MySQL",
+                "edition": "5.5"
+            },
+            "5.7": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-10",
+                "latest": true,
+                "version": "5.7.18",
+                "product": "MySQL",
+                "edition": "5.7"
+            }
+        },
+        "Nginx": {
+            "1.13": {
+                "stable": false,
+                "ends": "9999-12-31",
+                "released": "2017-04-25",
+                "latest": true,
+                "version": "1.13.0",
+                "product": "Nginx",
+                "edition": "1.13"
+            },
+            "1.12": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-12",
+                "latest": false,
+                "version": "1.12.0",
+                "product": "Nginx",
+                "edition": "1.12"
+            }
+        },
+        "OpenSSL": {
+            "1.0.2": {
+                "stable": true,
+                "ends": "2019-12-31",
+                "released": "2017-05-25",
+                "latest": true,
+                "version": "1.0.2l",
+                "product": "OpenSSL",
+                "edition": "1.0.2"
+            },
+            "1.1.0": {
+                "stable": true,
+                "ends": "2018-08-31",
+                "released": "2017-05-25",
+                "latest": false,
+                "version": "1.1.0f",
+                "product": "OpenSSL",
+                "edition": "1.1.0"
+            }
+        },
+        "Symfony": {
+            "3.3": {
+                "stable": true,
+                "ends": "2018-01-01",
+                "released": "2017-05-01",
+                "latest": true,
+                "version": "3.3.0",
+                "product": "Symfony",
+                "edition": "3.3"
+            },
+            "3.2": {
+                "stable": true,
+                "ends": "2017-07-01",
+                "released": "2016-11-01",
+                "latest": false,
+                "version": "3.2.9",
+                "product": "Symfony",
+                "edition": "3.2"
+            },
+            "2.7": {
+                "stable": true,
+                "ends": "2018-05-01",
+                "released": "2015-05-01",
+                "latest": false,
+                "version": "2.7.28",
+                "product": "Symfony",
+                "edition": "2.7"
+            },
+            "2.8": {
+                "stable": true,
+                "ends": "2018-11-01",
+                "released": "2015-11-01",
+                "latest": false,
+                "version": "2.8.21",
+                "product": "Symfony",
+                "edition": "2.8"
+            }
+        },
+        "PHP": {
+            "7.0": {
+                "stable": true,
+                "ends": "2018-12-03",
+                "released": "2015-12-03",
+                "latest": false,
+                "version": "7.0.19",
+                "product": "PHP",
+                "edition": "7.0"
+            },
+            "7.1": {
+                "stable": true,
+                "ends": "2019-12-01",
+                "released": "2016-12-01",
+                "latest": true,
+                "version": "7.1.5",
+                "product": "PHP",
+                "edition": "7.1"
+            },
+            "5.6": {
+                "stable": true,
+                "ends": "2018-12-31",
+                "released": "2014-08-28",
+                "latest": false,
+                "version": "5.6.30",
+                "product": "PHP",
+                "edition": "5.6"
+            }
+        },
+        "Linux Kernel": {
+            "3.4": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2016-10-26",
+                "latest": false,
+                "version": "3.4.113",
+                "product": "Linux Kernel",
+                "edition": "3.4"
+            },
+            "4.4": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-25",
+                "latest": false,
+                "version": "4.4.70",
+                "product": "Linux Kernel",
+                "edition": "4.4"
+            },
+            "4.9": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-25",
+                "latest": false,
+                "version": "4.9.30",
+                "product": "Linux Kernel",
+                "edition": "4.9"
+            },
+            "3.16": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-04",
+                "latest": false,
+                "version": "3.16.43",
+                "product": "Linux Kernel",
+                "edition": "3.16"
+            },
+            "3.12": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-09",
+                "latest": false,
+                "version": "3.12.74",
+                "product": "Linux Kernel",
+                "edition": "3.12"
+            },
+            "3.2": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-04",
+                "latest": false,
+                "version": "3.2.88",
+                "product": "Linux Kernel",
+                "edition": "3.2"
+            },
+            "4.10": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-20",
+                "latest": true,
+                "version": "4.10.17",
+                "product": "Linux Kernel",
+                "edition": "4.10"
+            },
+            "4.1": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-28",
+                "latest": false,
+                "version": "4.1.40",
+                "product": "Linux Kernel",
+                "edition": "4.1"
+            },
+            "4.11": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-25",
+                "latest": true,
+                "version": "4.11.3",
+                "product": "Linux Kernel",
+                "edition": "4.11"
+            },
+            "3.10": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-02-10",
+                "latest": false,
+                "version": "3.10.105",
+                "product": "Linux Kernel",
+                "edition": "3.10"
+            },
+            "3.18": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-25",
+                "latest": false,
+                "version": "3.18.55",
+                "product": "Linux Kernel",
+                "edition": "3.18"
+            }
+        }
+    },
+    "client": {
+        "Google Chrome": {
+            "58.0": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-09",
+                "latest": true,
+                "version": "58.0.3029.110",
+                "product": "Google Chrome",
+                "edition": "58.0"
+            }
+        },
+        "TeamViewer": {
+            "12.0": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "0001-01-01",
+                "latest": true,
+                "version": "12.0.77242",
+                "product": "TeamViewer",
+                "edition": "12.0"
+            }
+        },
+        "Mozilla Firefox": {
+            "53.0": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-19",
+                "latest": true,
+                "version": "53.0.3",
+                "product": "Mozilla Firefox",
+                "edition": "53.0"
+            },
+            "52.1": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-19",
+                "latest": false,
+                "version": "52.1.2",
+                "product": "Mozilla Firefox",
+                "edition": "52.1"
+            },
+            "45.9": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-19",
+                "latest": false,
+                "version": "45.9.0",
+                "product": "Mozilla Firefox",
+                "edition": "45.9"
+            }
+        },
+        "Microsoft Windows 10": {
+            "1703": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "4/11/2017",
+                "latest": true,
+                "version": "15063",
+                "product": "Microsoft Windows 10",
+                "edition": "1703"
+            },
+            "1607": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "11/29/2016",
+                "latest": false,
+                "version": "14393",
+                "product": "Microsoft Windows 10",
+                "edition": "1607"
+            }
+        },
+        "Adobe Flash Player": {
+            "25": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-09",
+                "latest": true,
+                "version": "25.0.0.171",
+                "product": "Adobe Flash Player",
+                "edition": "25"
+            }
+        },
+        "OpenVPN": {
+            "2.4": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-11",
+                "latest": true,
+                "version": "2.4.2",
+                "product": "OpenVPN",
+                "edition": "2.4"
+            }
+        },
+        "Mozilla Thunderbird": {
+            "52.1": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-05-15",
+                "latest": true,
+                "version": "52.1.1",
+                "product": "Mozilla Thunderbird",
+                "edition": "52.1"
+            }
+        },
+        "Java": {
+            "8.0": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2017-04-18",
+                "latest": true,
+                "version": "8.0.131",
+                "product": "Java",
+                "edition": "8.0"
+            }
+        },
+        "VeraCrypt": {
+            "1": {
+                "stable": true,
+                "ends": "9999-12-31",
+                "released": "2016-10-17",
+                "latest": true,
+                "version": "1.19",
+                "product": "VeraCrypt",
+                "edition": "1"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqtree/1.4.0/jqtree.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqtree/1.4.0/tree.jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.12/ua-parser.min.js"></script>
+    </head>
+    <body>
+        <!--http://vergrabber.kingu.pl/vergrabber.json-->
+       <div id="test"></div>
+
+       <p>Your Browser:<span id="bname"></span> <span id="bver"></span></p>
+
+       <p>the latest version:<span id="latestbver"></span></p>
+       <script>
+           var data = [
+                {
+                    name: 'Google Chrome',
+                    children: [
+                        { name: "58.0.3029.110" },
+                    ]
+                },
+                {
+                    name: 'Mozilla Firefox',
+                    children: [
+                        { name: "12.0.77242", }
+                    ]
+                }
+        ];
+           var parser = new UAParser();
+           $('#bname').text($.ua.browser.name);
+           $('#bver').text($.ua.browser.version);
+           $('#test').tree({data: data});
+    </script>
+    </body>
+</html>
