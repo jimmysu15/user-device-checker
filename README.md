@@ -1,6 +1,6 @@
 # user-device-checker
 網頁顯示異常? 用此快速檢測使用者的裝置資訊。
-[https://jimmysu15.github.io/user-device-checker/]https://jimmysu15.github.io/user-device-checker/
+https://jimmysu15.github.io/user-device-checker/
 
 瀏覽器 JS、Cookies 功能是否運作正常
 瀏覽器名稱、版本、瀏覽器引擎資訊
