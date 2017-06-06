@@ -69,6 +69,8 @@
                 <li data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否阻擋彈跳視窗或開新視窗">彈跳視窗測試:<a href="http://www.google.com" target="_blank">第 1 種</a>、<a href="javascript:void(0)" id="jspop">第 2 種</a></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否勾選不要再顯示對話方塊等相關設定">confirm 確認視窗功能測試:<span id="isConfirm">異常</span></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否勾選不要再顯示對話方塊等相關設定">alert 提示視窗功能測試:<span id="isAlert">異常</span></li>
+                <li>IP位址:<span id="ip"></span></li>
+                <li>地址位置偵測:<div id="twzipcode"></div><!--縣市:<span id="county"></span>, 鄉鎮區:<span id="district"></span>,-->(緯度:<span id="latitude"></span>, 經度:<span id="longitude"></span>)</li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器裝置基本資訊">UserAgent:<span id="ua"></span></li>
             </ol>
             <button class="btn btn-default" id="btn_send"><span class="glyphicon glyphicon-envelope"></span><span class="send_txt">回報上述資訊</span></button>
@@ -76,7 +78,9 @@
         <div id="root" style="display:none"></div>
 
         <footer>感謝 : <a href="https://material.io/icons/" target="_blank">Material icons</a>、<a href="f2etw/detect-inapp" target="_blank">f2etw/detect-inapp</a>、<a href="http://vergrabber.kingu.pl/" target="_blank">vergrabber</a>、<a href="https://modernizr.com/" target="_blank">modernizr</a>、<a href="http://mydevice.io/" target="_blank">mydevice.io</a>、<a href="http://enchroma.com/test/instructions/" target="_blank">enchroma - TEST YOUR COLOR VISION</a>、<a href="http://rodert.pixnet.net/blog/post/36082979-%E3%80%8C%E9%A1%8F%E8%89%B2%E5%85%B1%E8%AD%98%E3%80%8D%E4%BD%A0%E8%B7%9F%E6%88%91%E7%9C%8B%E5%88%B0%E7%9A%84%E8%89%B2%E7%9A%86%E4%B8%80%E6%A8%A3%E5%97%8E%EF%BC%9F" target="_blank">顏色共識</a>、<a href="http://faisalman.github.io/ua-parser-js/" target="_blank">ua-parser-js</a>、<a href="https://codepen.io/quasimondo/" target="_blank">Mario Klingemann</a>、
-            <a href="http://www.freeactionscript.com/tag/dynamic-explosion-effects/" target="_blank">Free ActionScript</a>
+            <a href="http://www.freeactionscript.com/tag/dynamic-explosion-effects/" target="_blank">Free ActionScript</a>、
+            <a href="https://code.essoduke.org/twzipcode/" target="_blank">essoduke/jQuery-TWzipcode</a>、
+            <a href="http://ipify.org" target="_blank">ipify.org</a>
         </footer>
 
         <div id="bg" /></div>
@@ -91,6 +95,9 @@
         <!--<![endif]-->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/ua-parser.js"></script>
+        <script src="js/jquery.twzipcode.min.js"></script>
+        <script type="application/javascript">function getIP(json) {$('#ip').text(json.ip);}</script>
+        <script type="application/javascript" src="//api.ipify.org?format=jsonp&callback=getIP"></script>
 
 
         <img src="qrcode.png" class="qrcode">
@@ -102,6 +109,20 @@
             var currentdate = new Date();
             var datetime = currentdate.getFullYear() + "/" + (currentdate.getMonth()+1) + "/" + currentdate.getDate()  + " "+ addZero(currentdate.getHours()) + ":"  + addZero(currentdate.getMinutes()) ;
             $('#time').text(datetime);
+
+            $('#twzipcode').twzipcode({
+                'css': ['county', 'district', 'zipcode'],
+                'detect': function (coords) {
+                    $('#latitude').text(coords.latitude);
+                    $('#longitude').text(coords.longitude);
+                    console.log(coords.latitude);
+                    console.log(coords.longitude);
+                    // $('#county').text($('.country').text())
+                    // $('#district').text($('.district').text())
+                }
+
+            });
+
 
                var data = {"access_token": "822grqoxpufrd2y62525n5ae"};
                 function onSuccess() {
