@@ -23,7 +23,7 @@
             ga('create', 'UA-89993817-7', 'auto');
             ga('send', 'pageview');
         </script>
-        <script type="text/javascript" src="//typesquare.com/accessor/zh_tw/script/typesquare.js?CrenjcXTbrM%3D" charset="utf-8"></script>-->
+        <script type="text/javascript" src="//typesquare.com/accessor/zh_tw/script/typesquare.js?CrenjcXTbrM%3D" charset="utf-8"></script>
     </head>
     <body>
         <div class="container">
@@ -54,9 +54,9 @@
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="將會發生文字或網頁顯示異常、圖片模糊等情況。">是否有調整瀏覽器字型設定:<span id="isMinFS"></span></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="將會發生文字或網頁顯示異常、圖片模糊等情況。">是否有調整瀏覽器縮放倍率:<span id="isZoom"></span></li>
                 <li class="log" class="item_fontsize_warning">將會發生文字或網頁顯示異常、圖片模糊等情況。</li>
-                <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊" class="item_res">螢幕解析度:<span id="sw"></span>*<span id="sh"></span></li>
-                <li class="log" class="item_res" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊">視窗大小:<span id="ww"></span>*<span id="wh"></span></li>
-                <li class="log" class="item_res" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊">網頁寬高:<span id="dw"></span>*<span id="dh"></span></li>
+                <li class="log item_res" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊">螢幕解析度:<span id="sw"></span>*<span id="sh"></span></li>
+                <li class="log item_res" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊">視窗大小:<span id="ww"></span>*<span id="wh"></span></li>
+                <li class="log item_res" data-toggle="tooltip" data-placement="bottom" title="檢測您的視窗相關資訊，此數值可能受網頁縮放影響，而無法顯示正確資訊">網頁寬高:<span id="dw"></span>*<span id="dh"></span></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測您的瀏覽器能否正常執行 Google 分析功能">執行 Google Analytics:<span id="isGA"></span></li>
                 <li data-toggle="tooltip" data-placement="bottom" title="檢測螢幕設定是否異常" class="item_color_test">螢幕是否調太亮:<span style="color:#f5f5f5;font-weight:normal">還有我</span><span style="color:#eee;font-weight:normal">看得到我嗎?</span></li>
                 <li data-toggle="tooltip" data-placement="bottom" title="檢測螢幕設定是否異常" class="item_color_test">螢幕對比檢測:<span style="color:#2C2C2D;font-weight:bold;background:#000000">物產豐隆</span><span style="color:#333;font-weight:bold;background:#000000">哆拉A夢</span></li>
@@ -65,12 +65,18 @@
                 <li data-toggle="tooltip" data-placement="bottom" title="檢查使用者認色能力，與螢幕色彩是否正確">從左到右的數字是?<br><img class="img-responsive" src="color.jpg"></li>
                 <li data-toggle="tooltip" data-placement="bottom" title="檢查 Flash 內容是否被阻擋，或是無法執行">Flash:<br><embed width="250" height="90" src="test.swf" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer_tw" align="middle" play="true" loop="true" scale="noborder" devicefont="false"name="index" menu="true" allowfullscreen="false" allowscriptaccess="sameDomain" salign="" type="application/x-shockwave-flash"></li>
                 <li data-toggle="tooltip" data-placement="bottom" title="檢查螢幕解析度比例是否正確">螢幕解析度比例檢測:<span id="circle">正圓形?</span></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="檢查瀏覽器是否支援 WEBP, SVG, APNG(看到圖形會動)">支援圖形格式:<img src="webp.webp" alt="webp"><img src="svg.svg" alt="svg"></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="檢查瀏覽器是否支援 APNG">會動嗎? <img src="gifapng.png" alt="apng" class="img-responsive"></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢查來源網址內容">來源網址:<br><span id="refer"></span></li>
                 <li data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否阻擋彈跳視窗或開新視窗">彈跳視窗測試:<a href="http://www.google.com" target="_blank">第 1 種</a>、<a href="javascript:void(0)" id="jspop">第 2 種</a></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否勾選不要再顯示對話方塊等相關設定">confirm 確認視窗功能測試:<span id="isConfirm">異常</span></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器是否勾選不要再顯示對話方塊等相關設定">alert 提示視窗功能測試:<span id="isAlert">異常</span></li>
                 <li>IP位址:<span id="ip"></span></li>
-                <li>地址位置偵測:<div id="twzipcode"></div><!--縣市:<span id="county"></span>, 鄉鎮區:<span id="district"></span>,-->(緯度:<span id="latitude"></span>, 經度:<span id="longitude"></span>)</li>
+                <li class="log item_geo">地址位置:<br>
+                <div id="twzipcode" class="hide"></div>
+                國家 : <span id="country">沒按允許或無法偵測</span>, <br>
+                縣市 : <span id="county">沒按允許或無法偵測</span><span id="district"></span>,<br>
+                緯度 : <span id="latitude">無法取得</span>, <br>經度 : <span id="longitude">無法取得</span></li>
                 <li class="log" data-toggle="tooltip" data-placement="bottom" title="檢測瀏覽器裝置基本資訊">UserAgent:<span id="ua"></span></li>
             </ol>
             <button class="btn btn-default" id="btn_send"><span class="glyphicon glyphicon-envelope"></span><span class="send_txt">回報上述資訊</span></button>
@@ -80,7 +86,7 @@
         <footer>感謝 : <a href="https://material.io/icons/" target="_blank">Material icons</a>、<a href="f2etw/detect-inapp" target="_blank">f2etw/detect-inapp</a>、<a href="http://vergrabber.kingu.pl/" target="_blank">vergrabber</a>、<a href="https://modernizr.com/" target="_blank">modernizr</a>、<a href="http://mydevice.io/" target="_blank">mydevice.io</a>、<a href="http://enchroma.com/test/instructions/" target="_blank">enchroma - TEST YOUR COLOR VISION</a>、<a href="http://rodert.pixnet.net/blog/post/36082979-%E3%80%8C%E9%A1%8F%E8%89%B2%E5%85%B1%E8%AD%98%E3%80%8D%E4%BD%A0%E8%B7%9F%E6%88%91%E7%9C%8B%E5%88%B0%E7%9A%84%E8%89%B2%E7%9A%86%E4%B8%80%E6%A8%A3%E5%97%8E%EF%BC%9F" target="_blank">顏色共識</a>、<a href="http://faisalman.github.io/ua-parser-js/" target="_blank">ua-parser-js</a>、<a href="https://codepen.io/quasimondo/" target="_blank">Mario Klingemann</a>、
             <a href="http://www.freeactionscript.com/tag/dynamic-explosion-effects/" target="_blank">Free ActionScript</a>、
             <a href="https://code.essoduke.org/twzipcode/" target="_blank">essoduke/jQuery-TWzipcode</a>、
-            <a href="http://ipify.org" target="_blank">ipify.org</a>
+            <a href="http://ipify.org" target="_blank">ipify.org</a>、<a href="http://www.geonames.org/" target="_blank">GeoNames</a>
         </footer>
 
         <div id="bg" /></div>
@@ -115,14 +121,22 @@
                 'detect': function (coords) {
                     $('#latitude').text(coords.latitude);
                     $('#longitude').text(coords.longitude);
-                    console.log(coords.latitude);
-                    console.log(coords.longitude);
-                    // $('#county').text($('.country').text())
-                    // $('#district').text($('.district').text())
+                    $('#county').text($('.county option:selected').text());
+                    $('#district').text($('.district option:selected').text());
                 }
-
             });
-
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $.getJSON('http://ws.geonames.org/countryCode', {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                        username:'su1205su',
+                        type: 'JSON'
+                    }, function(result) {
+                        $('#country').text(result.countryName);
+                    });
+                });
+            }
 
                var data = {"access_token": "822grqoxpufrd2y62525n5ae"};
                 function onSuccess() {
