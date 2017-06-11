@@ -1,5 +1,6 @@
 # user-device-checker
-網頁顯示異常? 用此快速檢測使用者的裝置資訊。  
+網頁顯示異常? 
+用此快速檢測使用者的裝置與瀏覽器相關。  
 https://jimmysu15.github.io/user-device-checker/
 
 ### 現有功能
@@ -20,7 +21,7 @@ https://jimmysu15.github.io/user-device-checker/
 - 螢幕解析度比例是否正確   
 - 彈跳視窗是否會被阻擋    
 - alert/confirm 是否正常   
-- 支援是否支援 APNG、WEBP、SVG
+- 是否支援 APNG、WEBP、SVG
 - IP位置
 - 瀏覽器 html geolocation 資訊與台灣縣市對照
 
